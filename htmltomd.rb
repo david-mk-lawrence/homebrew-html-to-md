@@ -5,20 +5,20 @@
 class Htmltomd < Formula
   desc "Convert HTML files to markdown"
   homepage "https://github.com/david-mk-lawrence/htmltomd"
-  version "0.2.0"
+  version "0.2.2"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.0/htmltomd_0.2.0_Darwin_arm64.tar.gz"
-      sha256 "56006f75bf3fd8cf7d93dd213acd22f99ca36e5c70091de6316ede7b479da394"
+      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.2/htmltomd_0.2.2_Darwin_arm64.tar.gz"
+      sha256 "5f506f3f209100c9adbff29a8ae4e2dbd656b51540357aa9881be9bda97f2e8f"
 
       def install
         bin.install "htmltomd"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.0/htmltomd_0.2.0_Darwin_x86_64.tar.gz"
-      sha256 "167e2a474c7f43b09f8a6cc4ecd461d27ace30bf8f74a3e265e8fc824872a359"
+      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.2/htmltomd_0.2.2_Darwin_x86_64.tar.gz"
+      sha256 "ab7385ddaa429e1ade187891085131efaf99e49f11848c90a4037b3ad2d45c6d"
 
       def install
         bin.install "htmltomd"
@@ -28,16 +28,16 @@ class Htmltomd < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.0/htmltomd_0.2.0_Linux_x86_64.tar.gz"
-      sha256 "827b41468884ec5c4db87e4a2ef898b89c777be8d297c9376fa2b0133671a02c"
+      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.2/htmltomd_0.2.2_Linux_x86_64.tar.gz"
+      sha256 "cdaa45456d1d4c1f336953f720e16a2a9ae50ad7636d82a031449ec5e4d3be4d"
 
       def install
         bin.install "htmltomd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.0/htmltomd_0.2.0_Linux_arm64.tar.gz"
-      sha256 "c90af416029db2e35b40a47b9ec785c0546ccf400a65f9095754dc726d831942"
+      url "https://github.com/david-mk-lawrence/htmltomd/releases/download/v0.2.2/htmltomd_0.2.2_Linux_arm64.tar.gz"
+      sha256 "c22b40913c12b67d239d590168ad39f139374a020ab661567cf59f685f803011"
 
       def install
         bin.install "htmltomd"
